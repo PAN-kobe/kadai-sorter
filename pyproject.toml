@@ -1,0 +1,32 @@
+[project]
+name = "kadai-sorter"
+version = "0.1.0"
+description = "Safely organize university coursework files"
+requires-python = ">=3.12"
+dependencies = ["matplotlib>=3.9", "rich>=13.9", "typer>=0.15"]
+
+[project.scripts]
+kadai-sort = "kadai_sorter.cli:app"
+
+[dependency-groups]
+dev = ["mypy>=1.13", "pytest>=8.3", "ruff>=0.8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/kadai_sorter"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+packages = ["kadai_sorter"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
