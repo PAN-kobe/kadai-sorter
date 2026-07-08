@@ -1,0 +1,11 @@
+student_id = "262e140e"
+
+[[courses]]
+name = "プログラミング"
+aliases = ["programming", "プログラミング", "プログラム"]
+extensions = [".py", ".pdf", ".tex", ".zip"]
+
+[[courses]]
+name = "応用国際経済学"
+aliases = ["international-economics", "応用国際経済学", "国際経済学"]
+extensions = [".pdf", ".docx", ".tex"]
